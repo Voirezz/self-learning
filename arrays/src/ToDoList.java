@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class toDoList {
+public class ToDoList {
     public static final Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
