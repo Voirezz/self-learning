@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/arrays/arrays.iml" filepath="$PROJECT_DIR$/arrays/arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-structures/arrays.iml" filepath="$PROJECT_DIR$/data-structures/arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/personal-projects.iml" filepath="$PROJECT_DIR$/.idea/personal-projects.iml" />
     </modules>
   </component>
