@@ -1,5 +1,5 @@
 public class Stack {
-    NodeStack head;
+    Node head;
     int size;
 
     public Stack(){
@@ -8,12 +8,10 @@ public class Stack {
     }
 
     public void push(int value){
-        NodeStack newNode = new NodeStack(value);
-
+        Node newNode = new Node(value);
         if(head != null){
             newNode.next = head;
         }
-
         head =  newNode;
         size++;
     }

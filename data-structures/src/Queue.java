@@ -25,5 +25,4 @@ public boolean isEmpty(){
 public int size(){
         return elements.size();
 }
-
 }

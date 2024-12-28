@@ -1,35 +1,33 @@
-import javax.xml.crypto.dsig.spec.HMACParameterSpec;
-
 public class Temp {
-    public static void main(String [] args){
-     int [] arr = new int[]{1,2,3,4,5,6,7,8,9,10};
-     int target = 3;
+    public static void main(String [] args) {
+    String str = "vnav";
+        System.out.println(isPalindrome(str));
+}
+    public static boolean isPalindrome(String str){
 
-     if(binarySearch(arr, target) == -1){
-         System.out.println("Number not found");
-     }
-     else {
-         System.out.println("Target Found : " + binarySearch(arr,target));
-     }
-    }
+        if(str.isEmpty()){
+            return true;
+        }
 
-    public static int binarySearch(int [] arr, int target) {
+        Stack test = new Stack();
+        int length = str.length();
+
         int left = 0;
-        int right = arr.length - 1;
+        int midpoint = length / 2;
 
-        while(left <= right){
-           int mid = left + (right - left) / 2;
+        while(left < midpoint){
+            test.push(str.charAt(left));
+            left++;
+        }
 
-           if(arr[mid] == target){
-               return target;
-           }
-           if(arr[mid] < target) {
-               left = mid + 1;
-           }
-           else {
-               right = mid - 1;
-           }
-       }
-        return -1;
+        int right = (length/ 2 == 0) ? midpoint : midpoint + 1;
+
+        while(right < length){
+            if(test.isEmpty() || test.pop() != str.charAt(right)){
+                return false;
+            }
+            right++;
+        }
+        return test.isEmpty();
     }
 }
