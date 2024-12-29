@@ -20,7 +20,7 @@ public class Temp {
             left++;
         }
 
-        int right = (length/ 2 == 0) ? midpoint : midpoint + 1;
+        int right = (length / 2 == 0) ? midpoint : midpoint + 1;
 
         while(right < length){
             if(test.isEmpty() || test.pop() != str.charAt(right)){
