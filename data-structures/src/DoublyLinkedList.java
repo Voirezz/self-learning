@@ -37,8 +37,31 @@ public class DoublyLinkedList {
         }
         size++;
     }
+
+    public int delete() {
+        if(head == null){
+            throw new IllegalStateException("Link is empty");
+        }
+        int pop;
+
+        if(head.next == null){
+            pop = head.data;
+            head = null;
+            return pop ;
+        }
+        else{
+            Node dummy = head;
+            while(dummy.next.next != null){
+                dummy = dummy.next;
+            }
+            pop = dummy.next.data;
+            dummy.next = null;
+        }
+        return pop;
+    }
+
     public void print(){
-        if(size == 0) System.out.println("Stack is empty");
+        if(size == 0) System.out.println("Link is empty");
         Node dummy = head;
 
         while(dummy != null){
