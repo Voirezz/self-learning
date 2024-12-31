@@ -1,4 +1,4 @@
-public class Temp {
+public class StackPalindromeCheck {
     public static void main(String [] args) {
     String str = "vnav";
         System.out.println(isPalindrome(str));
