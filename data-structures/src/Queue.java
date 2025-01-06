@@ -15,13 +15,17 @@ public int pop(){
         if (elements.isEmpty()){
             throw new IllegalStateException("Queue is empty.");
         }
-        return elements.remove(elements.size()-1);
+        return elements.removeFirst();
 }
 
+public void print(){
+        for(int z : elements){
+            System.out.print(z + "->");
+        }
+}
 public boolean isEmpty(){
         return elements.isEmpty();
 }
-
 public int size(){
         return elements.size();
 }
