@@ -25,6 +25,12 @@ public class PriorityQueue {
         return elements.get(0);
     }
 
+    public void print(){
+        for(int x : elements){
+            System.out.print(x + " ");
+        }
+    }
+
     public void comparison(){
         elements.sort((a, b) -> a - b);
     }

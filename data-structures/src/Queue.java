@@ -15,7 +15,7 @@ public int pop(){
         if (elements.isEmpty()){
             throw new IllegalStateException("Queue is empty.");
         }
-        return elements.removeFirst();
+        return elements.remove(0);
 }
 
 public void print(){
