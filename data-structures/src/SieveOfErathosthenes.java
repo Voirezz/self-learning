@@ -5,6 +5,7 @@ public class SieveOfErathosthenes {
         //Making a boolean array and setting everything after 1 as true
         boolean[] isPrime = new boolean[n];
         isPrime[0] = false;
+
         for(int i = 1; i < n; i++){
             isPrime[i] = true;
         }

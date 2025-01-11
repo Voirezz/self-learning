@@ -11,10 +11,11 @@ public class MonteCarloSimulation {
             if (sum == 7 || sum == 11) {
                 success++;
             }
+        }
 
             double probability = (double) (100 * success) / (double) N;
             probability = Math.round(probability * 100.0) / 100.0;
             System.out.println(probability);
-        }
     }
 }
+
